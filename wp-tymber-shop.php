@@ -205,7 +205,7 @@ run_wp_tymber_shop();
  *
  * @since    3.2.0
  */
-require 'plugin-update-checker/plugin-update-checker.php';
+require WP_TYMBER_SHOP_DIR .  'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $update_checker = PucFactory::buildUpdateChecker(
