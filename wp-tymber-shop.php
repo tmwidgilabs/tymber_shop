@@ -10,7 +10,7 @@
  * @wordpress-plugin
  * Plugin Name:       WP Tymber Shop
  * Plugin URI:        https://tymber.me/shop/
- * Description:       Tymber Shop - advanced online shopping experience for cannabis pick-ups & deliveries.
+ * Description:       Tymber Shop - advanced online shopping experience for cannabis pick-ups & deliveries...
  * Version:           3.2.0
  * Author:            Tymber
  * Author URI:        https://tymber.me
