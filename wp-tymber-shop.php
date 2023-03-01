@@ -214,5 +214,7 @@ $update_checker = PucFactory::buildUpdateChecker(
 	'tymber-shop'
 );
 
+$update_checker->getVcsApi()->enableReleaseAssets();
+
 // Set the branch that contains the stable release.
 $update_checker->setBranch( 'main' );
