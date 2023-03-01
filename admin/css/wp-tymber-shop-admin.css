@@ -1,0 +1,22 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.license_key__Title {
+	padding-bottom: 6.5px;
+	font-weight: 600;
+	color: #23282d;
+	font-weight: bold;
+	box-sizing: border-box;
+	flex: 1 1 100%;
+	display: block;
+}
+
+.cf-field.cf-hidden {
+	display: none;
+}
+
+.shop_version.hide {
+	display: none;
+}

@@ -1,0 +1,6 @@
+/public/app
+!/vendor
+/storage
+.vscode
+.obsidian
+.idea

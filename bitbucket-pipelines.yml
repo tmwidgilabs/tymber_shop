@@ -1,0 +1,26 @@
+# Template PHP Build
+
+# This template allows you to validate your PHP application.
+# The workflow allows running tests and code linting on the default branch.
+
+image: composer:2.0
+
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: Deploy to staging
+          deployment: staging
+          script:
+            - echo "Deploying to dev"
+            - pipe: atlassian/rsync-deploy:0.4.3
+              variables:
+                USER: 'u87-cg29jburecwn'
+                SERVER: 'widgilabs-sites.com'
+                REMOTE_PATH: '/home/u87-cg29jburecwn/www/tymber.dev.widgilabs-sites.com/public_html/wp-content/plugins/wp-tymber-shop'
+                LOCAL_PATH: '.'
+                SSH_PORT: '18765'
+                EXTRA_ARGS: '-av --no-perms --exclude=.*'
+                DEBUG: 'true'
+                DELETE_FLAG: 'false'
